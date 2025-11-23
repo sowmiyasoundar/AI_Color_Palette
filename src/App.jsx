@@ -20,8 +20,8 @@ const App = () => {
           messages: [
             {
               role: "user",
-              content: `Generate exactly 5 HEX color codes that strongly match the theme: "${prompt}". The colors must be realistic, meaningful, and most relevant to the theme. 
-               Return valid HEX codes separated by commas.
+              content: `Generate exactly 10 HEX color codes that strongly match the theme: "${prompt}". The colors must be realistic, meaningful, and most relevant to the theme. 
+               Return only valid HEX codes separated by commas.
                No text, no explanation.`
             }
           ]
@@ -104,7 +104,7 @@ const App = () => {
       )}
 
       {/* ⭐ SUJI ANIMATION - ADD IMAGE IN public/suji.png ⭐ */}
-      <div className="fixed bottom-20 right-1/4 w-38 h-38 animate-[fly_6s_infinite_ease-in-out]">
+      <div className="fixed bottom- 15 right-1/4 w-38 h-38 animate-[fly_6s_infinite_ease-in-out]">
         <img
           src="/super-suji.png"
           alt="Suji"
