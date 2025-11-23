@@ -165,7 +165,7 @@ const App = () => {
 
       {/* ⭐ PROFESSIONAL FOOTER ⭐ */}
       <footer
-        className={`w-full mt-20 py-6 text-center rounded-xl shadow-md transition
+        className={`w-full mt-30 py-6 text-center rounded-xl shadow-md transition
         ${
           darkMode
             ? "bg-gray-800 text-gray-300"
