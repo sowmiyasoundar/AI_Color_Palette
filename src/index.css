@@ -1,14 +1,35 @@
 @import "tailwindcss";
 
+/* ⭐ Flying Suji Animation */
 @keyframes fly {
-  0% { transform: translateY(0px) translateX(0px); }
-  50% { transform: translateY(-20px) translateX(-10px); }
-  100% { transform: translateY(0px) translateX(0px); }
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    transform: translateY(-20px) translateX(-12px);
+  }
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
 }
 
+/* ⭐ Sparkle Glow Animation */
 @keyframes sparkle {
-  0%,100% { opacity: 0.2; transform: scale(0.8); }
-  50% { opacity: 1; transform: scale(1.3); }
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.3);
+  }
 }
 
+/* ⭐ Utility classes you can use anywhere */
+.animate-fly {
+  animation: fly 6s ease-in-out infinite;
+}
 
+.animate-sparkle {
+  animation: sparkle 1.5s infinite;
+}
